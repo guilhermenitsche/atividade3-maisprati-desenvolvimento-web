@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria Responsiva</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Minha Galeria</div>
+    <ul class="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Galeria</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+  </nav>
+
+  <div class="flex-container">
+    <div class="grid-galeria">
+      <figure>
+        <img src="./assets/image1.jpg" alt="Imagem 1">
+        <figcaption>Legenda 1</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/image2.jpg" alt="Imagem 2">
+        <figcaption>Legenda 2</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/image3.jpg" alt="Imagem 3">
+        <figcaption>Legenda 3</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/image4.jpg" alt="Imagem 4">
+        <figcaption>Legenda 4</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/image5.jpg" alt="Imagem 5">
+        <figcaption>Legenda 5</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/image6.jpg" alt="Imagem 6">
+        <figcaption>Legenda 6</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/image7.jpg" alt="Imagem 7">
+        <figcaption>Legenda 7</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/image8.jpg" alt="Imagem 8">
+        <figcaption>Legenda 8</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <script>
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
